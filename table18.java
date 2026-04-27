@@ -1,0 +1,19 @@
+import java.io.*;
+class table
+{
+ public static void main(String args[])throws IOException
+
+ {
+  InputStreamReader isr=new InputStreamReader(System.in);
+  BufferedReader br=new BufferedReader(isr);
+  System.out.println("TABLE PROGRAM");
+  System.out.println("ENTER THE TABLE NUMBER:");
+  String s1=br.readLine();
+  int n=Integer.parseInt(s1);
+  System.out.println(n+"th TABLE");
+  for(int i=1;i<=10;i++)
+  {
+   System.out.println(i+"x"+n+"="+(i*n));
+  }
+ }
+}
